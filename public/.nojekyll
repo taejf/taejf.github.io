@@ -1,0 +1,2 @@
+# This file ensures that GitHub Pages doesn't try to process the site with Jekyll
+# This is important for static sites built with modern build tools like Vite
