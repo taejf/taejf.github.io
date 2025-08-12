@@ -36,11 +36,8 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
-          # Automatically inject basePath in your Next.js configuration file and disable
-          # server side image optimization (only used when using Next.js)
-          #
-          # You may remove this line if you want to manage the configuration yourself
-          static_site_generator: "custom"
+          token: ${{ secrets.GITHUB_TOKEN }}
+          enablement: false
       
       - name: Restore cache
         uses: actions/cache@v4
