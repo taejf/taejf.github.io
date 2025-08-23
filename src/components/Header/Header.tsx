@@ -1,3 +1,4 @@
+import logo from "/src/assets/logo-white.svg";
 import './Header.css';
 
 const Header = () => {
@@ -5,7 +6,7 @@ const Header = () => {
     <header className="header">
       <nav className="nav">
         <div className="logo">
-          <a href="/"><img className="logo-image" src="/src/assets/logo-white.svg" alt="JUAN FERNANDEZ T.A.E."/></a>
+          <a href="/"><img className="logo-image" src={logo} alt="JUAN FERNANDEZ T.A.E."/></a>
         </div>
         <div className="nav-links">
           <a href="#about">About</a>

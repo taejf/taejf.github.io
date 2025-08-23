@@ -8,15 +8,15 @@ const Hero = () => {
           JUAN FERNANDEZ T.A.E.
         </h1>
         <p className="hero-subtitle">
-          Technical Architecture & Engineering Solutions
+          Customized software solutions
         </p>
         <p className="hero-description">
-          Delivering innovative technical solutions with precision, 
+          Delivering innovative solutions with precision, 
           reliability, and excellence in every project.
         </p>
         <div className="cta-buttons">
-          <button className="btn-primary">Get Started</button>
-          <button className="btn-secondary">Learn More</button>
+          {/* <button className="btn-primary">Get Started</button> */}
+          {/* <button className="btn-secondary">Learn More</button> */}
         </div>
       </div>
     </section>

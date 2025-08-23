@@ -1,19 +1,22 @@
-import './Services.css';
+import "./Services.css";
 
 const Services = () => {
   const services = [
     {
-      title: "Technical Architecture",
-      description: "Designing robust and scalable system architectures tailored to your needs."
+      title: "Custom Software Development",
+      description:
+        "We design and build tailored software solutions that align with your business objectives.",
     },
     {
-      title: "Engineering Solutions",
-      description: "Implementing cutting-edge engineering practices for optimal performance."
+      title: "Automated Testing Solutions",
+      description:
+        "We implement robust automated testing strategies to ensure quality, reliability, and efficiency in your software.",
     },
     {
-      title: "Consulting",
-      description: "Expert guidance and strategic planning for your technical projects."
-    }
+      title: "Consulting and Training",
+      description:
+        "We provide expert consulting and hands-on training in software development and test automation best practices.",
+    },
   ];
 
   return (
