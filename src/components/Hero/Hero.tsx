@@ -1,9 +1,11 @@
+import favicon from "/favicon-white.svg";
 import './Hero.css';
 
 const Hero = () => {
   return (
     <section className="hero">
       <div className="hero-content">
+        <img className="logo-image" src={favicon} alt="JUAN FERNANDEZ T.A.E."/>
         <h1 className="hero-title">
           JUAN FERNANDEZ T.A.E.
         </h1>

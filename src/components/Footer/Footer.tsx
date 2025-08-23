@@ -1,3 +1,4 @@
+import logo from '../../assets/logo-white.svg';
 import './Footer.css';
 
 const Footer = () => {
@@ -6,9 +7,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-section">
-            <h3>TAEJF</h3>
-            <p>JUAN FERNANDEZ T.A.E.</p>
-            <p>Technical Architecture & Engineering</p>
+            <a href="/"><img className="logo-image" src={logo} alt="JUAN FERNANDEZ T.A.E."/></a>
           </div>
           <div className="footer-section">
             <h4>Contact</h4>
