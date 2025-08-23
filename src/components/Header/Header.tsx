@@ -5,7 +5,7 @@ const Header = () => {
     <header className="header">
       <nav className="nav">
         <div className="logo">
-          <span className="logo-text">TAEJF</span>
+          <a href="/"><img className="logo-image" src="/src/assets/logo-white.svg" alt="JUAN FERNANDEZ T.A.E."/></a>
         </div>
         <div className="nav-links">
           <a href="#about">About</a>

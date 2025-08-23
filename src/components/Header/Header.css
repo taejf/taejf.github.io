@@ -19,11 +19,9 @@
   margin: 0 auto;
 }
 
-.logo-text {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #ffffff;
-  letter-spacing: 2px;
+.logo-image {
+  width: 150px;
+  height: auto;
 }
 
 .nav-links {
