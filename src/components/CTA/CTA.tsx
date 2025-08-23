@@ -7,6 +7,7 @@ const CTA = () => {
         <h2>Ready to Transform Your Project?</h2>
         <p>Let's discuss how we can help you achieve your technical goals.</p>
         <button className="btn-primary">Contact Us Today</button>
+        {/* <a href="mailto:juan.isfg@gmail.com"><button className="btn-primary">Contact Us Today</button></a> */}
       </div>
     </section>
   );
