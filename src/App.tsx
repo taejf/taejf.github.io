@@ -1,4 +1,4 @@
-import { Header, Hero, About, Services, CTA, Footer } from './components';
+import { Header, Hero, About, Services, Projects, CTA, Footer } from './components';
 import './styles/layout.css';
 
 function App() {
@@ -10,6 +10,7 @@ function App() {
         <Hero />
         <About />
         <Services />
+        <Projects />
         <CTA />
       </main>
       
