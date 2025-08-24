@@ -6,12 +6,12 @@ const CTA = () => {
   const form = useRef<HTMLFormElement>(null);
   const [modalState, setModalState] = useState<{
     isOpen: boolean;
-    type: 'success' | 'error';
+    type: "success" | "error";
     message: string;
   }>({
     isOpen: false,
-    type: 'success',
-    message: ''
+    type: "success",
+    message: "",
   });
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
@@ -19,16 +19,21 @@ const CTA = () => {
 
     if (form.current) {
       emailjs
-        .sendForm('service_4rnbr3n', 'template_d34sxsw', form.current, {
-          publicKey: 'jz6wz3kim37UOgHjN',
-        })
+        .sendForm(
+          import.meta.env.VITE_EMAILJS_SERVICE_ID,
+          import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+          form.current,
+          {
+            publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+          }
+        )
         .then(
           () => {
             console.log("SUCCESS!");
             setModalState({
               isOpen: true,
-              type: 'success',
-              message: 'Message sent successfully! We will contact you soon.'
+              type: "success",
+              message: "Message sent successfully! We will contact you soon.",
             });
             form.current?.reset();
           },
@@ -36,8 +41,9 @@ const CTA = () => {
             console.log("FAILED...", error.text);
             setModalState({
               isOpen: true,
-              type: 'error',
-              message: 'There was an error sending the message. Please try again.'
+              type: "error",
+              message:
+                "There was an error sending the message. Please try again.",
             });
           }
         );
@@ -45,8 +51,8 @@ const CTA = () => {
       console.error("Form reference is null.");
       setModalState({
         isOpen: true,
-        type: 'error',
-        message: 'Internal error. Please reload the page and try again.'
+        type: "error",
+        message: "Internal error. Please reload the page and try again.",
       });
     }
   };
@@ -54,8 +60,8 @@ const CTA = () => {
   const closeModal = () => {
     setModalState({
       isOpen: false,
-      type: 'success',
-      message: ''
+      type: "success",
+      message: "",
     });
   };
   return (
@@ -82,12 +88,12 @@ const CTA = () => {
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <div className={`modal-header ${modalState.type}`}>
               <h3>
-                {modalState.type === 'success' ? (
+                {modalState.type === "success" ? (
                   <span className="modal-icon">✓</span>
                 ) : (
                   <span className="modal-icon">✗</span>
                 )}
-                {modalState.type === 'success' ? 'Mensaje Enviado' : 'Error'}
+                {modalState.type === "success" ? "Mensaje Enviado" : "Error"}
               </h3>
               <button className="modal-close" onClick={closeModal}>
                 ×
