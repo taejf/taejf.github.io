@@ -6,10 +6,10 @@ const About = () => {
       <div className="container">
         <h2>About TAEJF</h2>
         <p>
-          We specialize in technical architecture and engineering, 
-          providing comprehensive solutions that drive innovation and efficiency. 
-          Our expertise spans across multiple domains, ensuring robust and 
-          scalable implementations.
+          We offer comprehensive support in the creation and implementation of
+          technological solutions, helping them adopt new technologies and
+          optimize their processes. Additionally, we provide training and workshops
+          to develop teams that ensure quality in software projects.
         </p>
       </div>
     </section>
