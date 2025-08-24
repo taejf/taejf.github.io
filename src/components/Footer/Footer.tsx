@@ -8,17 +8,23 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-section">
             <a href="/"><img className="logo-image" src={logo} alt="JUAN FERNANDEZ T.A.E."/></a>
+            <span>Customized software solutions</span>
           </div>
           <div className="footer-section">
-            <h4>Contact</h4>
-            <p>Get in touch for consultations</p>
-            <p>and project discussions</p>
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
           </div>
           <div className="footer-section">
             <h4>Services</h4>
-            <p>Architecture Design</p>
-            <p>Engineering Solutions</p>
-            <p>Technical Consulting</p>
+            <ul>
+              <li>Custom Software Development</li>
+              <li>Automated Testing Solutions</li>
+              <li>Consulting and Training</li>
+            </ul>
           </div>
         </div>
         <div className="footer-bottom">
