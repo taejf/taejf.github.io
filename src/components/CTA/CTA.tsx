@@ -77,7 +77,9 @@ const CTA = () => {
             <input type="email" name="user_email" required />
             <label>Message</label>
             <textarea name="message" required />
-            <input className="btn-primary" type="submit" value="Send" />
+            <div className="cta-btn-wrapper">
+              <input className="btn-primary" type="submit" value="Send" />
+            </div>
           </form>
         </div>
       </section>
