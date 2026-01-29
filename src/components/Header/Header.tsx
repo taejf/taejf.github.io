@@ -9,8 +9,6 @@ const Header = () => {
           <a href="/"><img className="logo-image" src={logo} alt="JUAN FERNANDEZ T.A.E."/></a>
         </div>
         <div className="nav-links">
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
