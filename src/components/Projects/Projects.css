@@ -1,3 +1,32 @@
+@media (max-width: 480px) {
+  .modal-content {
+    margin: 0.5rem;
+    padding: 1rem;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    max-width: 98vw;
+    border-radius: 10px;
+    max-height: 100vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .modal-content h3 {
+    font-size: 1.15rem;
+    margin-bottom: 1rem;
+    padding-right: 1rem;
+  }
+  .modal-body {
+    gap: 1rem;
+    font-size: 1rem;
+  }
+  .modal-close {
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 1.2rem;
+    width: 28px;
+    height: 28px;
+  }
+}
 /* Projects Section */
 .section {
   padding: 5rem 2rem;
@@ -155,6 +184,10 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  max-height: 60vh;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+  -webkit-overflow-scrolling: touch;
 }
 
 .detailed-description {
